@@ -3,7 +3,7 @@
 To get started with this project, follow these steps:
 1. Clone this repository to your local machine.
 ```
-git clone gh repo clone mdzubayerhossain/BanglaGPT
+git clone https://github.com/mdzubayerhossain/BanglaGPT.git
 ```
 2. Install the required Python libraries using:
 ```
