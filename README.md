@@ -54,5 +54,19 @@ CREATE TABLE `user` (
 flask run
 ```
 
+Login Page
+![Login](https://github.com/user-attachments/assets/392e6d2f-6fe2-41e4-a9e4-5ac8274a61d3)
+Sign-In Page
+![singin](https://github.com/user-attachments/assets/213e2104-201c-4277-ac9d-07ccf193ae33)
+Home Page
+![home](https://github.com/user-attachments/assets/42eaa412-586a-4e65-a003-bf9e3540ad24)
+Message 
+![starting_msg](https://github.com/user-attachments/assets/6375dab5-c800-4ea1-b05a-d09c1d2c963b)
+Reply
+![reply](https://github.com/user-attachments/assets/b52c8451-8a40-4ffa-8674-6c6b0e45ee66)
+
+
+
+
 
 
