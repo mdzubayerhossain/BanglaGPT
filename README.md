@@ -1,3 +1,76 @@
+# Mobile Application for Call Center Agents - Chatbot for Family Planning
+
+This project is a Chatbot web application designed for the IEM-run Shukhi Poribar national call center under the Directorate General of Family Planning (DGFP), Bangladesh. The chatbot aims to assist call center agents in efficiently managing public queries related to family planning by providing accurate and timely information in Bangla.
+
+Developed under USAID's 'Breakthrough ACTION' project in collaboration with Johns Hopkins Center for Communication Programs (JHUCCP), the chatbot is intended to improve the efficiency of health communication and service delivery.
+
+## Background
+
+The 'Breakthrough ACTION' initiative, spanning from December 1, 2023, to April 30, 2025, focuses on strengthening health systems and promoting effective Social and Behavior Change (SBC) communication in Bangladesh. To support this effort, a Chatbot has been developed to assist the Shukhi Poribar call center agents in handling a high volume of daily calls by providing a pre-set question-and-answer bank for frequently asked questions (FAQs).
+
+## Key Features
+
+- **Conversational AI in Bangla:** Provides responses to user queries in Bangla, helping call center agents handle public queries more effectively.
+- **Comprehensive Question Bank:** Developed based on the 400+ page Family Planning manual, featuring categorized and segmented topics for efficient response retrieval.
+- **User-Friendly Interface:** Designed with a responsive UI/UX for easy navigation and interaction by call center agents.
+- **Automatic Knowledge Base Updates:** Supports seamless updates to the chatbot's knowledge base when the manual content is revised.
+- **Integration with Existing Systems:** Integrates with the existing call center software and the Management Information System (MIS) of DGFP.
+- **Multilingual Support:** Primary focus on Bangla, with the capability to extend to other languages.
+- **Training and Support:** Includes training for agents and detailed documentation to ensure smooth usage.
+
+## Folder Structure
+
+The project's main folders are organized as follows:
+
+- `/data`: Contains the `intents.json` file, which manages chatbot intents and responses.
+- `/models`: Holds the pre-trained TensorFlow model file (`chatbot_model.h5`).
+- `/auth`: Manages user authentication logic, including signup, login, and verification.
+- `/api`: Contains Flask routes for chatbot queries and user authentication.
+- `/scripts`: Includes TensorFlow model training scripts for updating the chatbot's knowledge base.
+- `/docs`: Documentation folder with user manuals, technical documentation, and data flow diagrams.
+
+## Scope of Work
+
+The development process covered the following tasks:
+
+1. **Needs Assessment:**
+   - Conducted meetings with the IEM unit and call center agents to gather a comprehensive understanding of public queries.
+   - Prepared a detailed question bank based on frequently asked questions.
+2. **Design and Development:**
+   - Designed a user-friendly UI/UX based on the approved question bank.
+   - Developed a web application supporting multilingual responses with a primary focus on Bangla.
+   - Incorporated information from the Family Planning manual into the chatbot's knowledge base.
+3. **Integration:**
+   - Integrated the chatbot with existing call center software and DGFP's MIS.
+4. **Categorization and Segmentation:**
+   - Implemented mechanisms for categorizing and segmenting specific topics for efficient response retrieval.
+5. **Testing and Quality Assurance:**
+   - Conducted thorough testing to ensure accuracy and reliability, incorporating feedback from IEM and Breakthrough ACTION teams.
+6. **Training and Documentation:**
+   - Provided training sessions for call center agents and IEM unit focal persons.
+   - Created user manuals, technical documentation, and training videos.
+7. **Support and Maintenance:**
+   - Offered post-deployment support and maintenance for a specified period.
+
+
+
+
+## Deliverables
+
+The following deliverables were provided:
+
+1. **Chatbot Application:**
+   - A functional web application for call center agents with a categorized question-and-answer bank.
+2. **Documentation:**
+   - User manual, technical documents, and data flow diagrams.
+   - Audio-visual guide for chatbot usage.
+3. **Credentials:**
+   - Handover of all credentials to the USAID 'Breakthrough ACTION' project.
+
+
+
+
+
 **Bangla Chatbot with GPT-like Functionality
 This repository hosts a chatbot designed to mimic the functionality of ChatGPT, but specifically for Bangla. The system features user authentication, including a login/signup section with verification, and serves intelligent responses in Bangla across various topics.
 
