@@ -57,7 +57,7 @@ def predict_class(sentence, model):
 
 def getResponse(ints, intents_json):
     if not ints: #check if the list is empty
-        return "Sorry"
+        return "দুঃখিত এই সম্পর্কে আমার কাছে কোন তথ্য নেই।"
     tag = ints[0]['intent']
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
@@ -71,6 +71,7 @@ def chatbot_response(msg):
     res = getResponse(ints, intents)
     return res
 
+'''\end'''  
 
 
 app = Flask(__name__)
@@ -100,8 +101,9 @@ def login():
             session['name'] = user['name']
             session['email'] = user['email']
             mesage = 'Logged in successfully !'
-            '''return render_template('user.html', mesage = mesage)'''
-            return render_template('index.html', mesage = mesage)
+            #'''return render_template('user.html', mesage = mesage)'''
+            #return render_template('index.html', mesage = mesage)
+            return redirect(url_for('index'))
         else:
             mesage = 'Please enter correct email / password !'
     return render_template('login.html', mesage = mesage)
@@ -111,6 +113,23 @@ def get_bot_response():
     userText = request.args.get('msg')
     return chatbot_response(userText)
 
+@app.route('/index')
+def index():
+    # Check if the user is logged in
+    if 'loggedin' in session:
+        return render_template('index.html', name=session['name'])
+    else:
+        # Redirect to login page if not logged in
+        return redirect(url_for('login'))
+
+@app.route('/profile')
+def profile():
+    # Check if the user is logged in
+    if 'loggedin' in session:
+        return render_template('profile.html', name=session['name'])
+    else:
+        # Redirect to login page if not logged in
+        return redirect(url_for('login'))
 
 @app.route('/logout')
 def logout():
@@ -118,7 +137,7 @@ def logout():
     session.pop('userid', None)
     session.pop('email', None)
     return redirect(url_for('login'))
-  
+
 @app.route('/register', methods =['GET', 'POST'])
 def register():
     mesage = ''
